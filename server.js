@@ -6,6 +6,8 @@ const app = express();
 
 const publicDir = path.join(__dirname, 'public');
 const distDir = path.join(__dirname, 'dist');
+console.log(publicDir);
+console.log(distDir);
 
 app.use(morgan('dev'));
 app.use(express.static(publicDir));
